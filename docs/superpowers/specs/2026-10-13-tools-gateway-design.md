@@ -60,7 +60,7 @@ Componentes en un único proceso, sin dependencias externas:
 2. **Auth** — valida `Authorization: Bearer <token>`.
 3. **Autorización por scope** — allowlist de prefijos por cliente.
 4. **Rate limiter** — token bucket en memoria por cliente.
-5. **Proxy** — transparente; respeará método/body/streaming; limpia hop-by-hop.
+5. **Proxy** — transparente; respeta método/body/streaming; limpia hop-by-hop.
 6. **Logger** — una línea JSON a stdout por request.
 7. **Health** — `GET /healthz`.
 
