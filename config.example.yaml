@@ -1,0 +1,13 @@
+routes:
+  service-a: http://upstream-a:3000
+  service-b: http://upstream-b:8080
+
+clients:
+  - id: client-1
+    token_hash: "<sha256 hex>"
+    allow: ["*"]
+    rate: { rps: 10, burst: 20 }
+  - id: client-2
+    token_hash: "<sha256 hex>"
+    allow: ["service-a"]
+    rate: { rps: 5, burst: 10 }
